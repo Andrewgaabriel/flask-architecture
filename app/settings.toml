@@ -1,0 +1,18 @@
+[default]
+SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
+TITLE = 'Pydaria'
+SECRET_KEY = 'fkdacflkfasdf'
+
+EXTENSIONS = [
+    "pydaria.extensions.auth",
+    "pydaria.extensions.database",
+    "pydaria.extensions.admin",
+    "pydaria.extensions.appearence",
+    "pydaria.extensions.commands",
+    "pydaria.blueprints.views",
+    "pydaria.blueprints.restapi"
+]
+
+[production]
+SQLALCHEMY_DATABASE_URI = 'postgresql:///test.db'
+
